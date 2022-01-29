@@ -1031,3 +1031,17 @@ p.back-link {
   margin-bottom: 20px;
   font-size: 12px;
   text-transform: uppercase; }
+
+
+.footer{
+  border-top: 1px solid #ccc;
+  padding-top: 20px;  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #E9ECF2;
+}
+
+.mian{
+  height:  100vh !important;
+}

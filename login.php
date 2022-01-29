@@ -91,7 +91,7 @@
 			<div class="group">
 				<input type="submit" value="Login" name="login" class="btn btn-success">
 			</div>
-			<span>Don't have any account?. Please <a href='index.php'> register now</a></span>
+			<span>Don't have any account?. Please <a href='register.php'> register now</a></span>
 		</form>
 
 	</div>
