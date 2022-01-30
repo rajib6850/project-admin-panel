@@ -15,14 +15,4 @@
 
 
 
-<?php 
-
-	
-	require './template/footer.php';
-
- ?>
-
-
-
-
-
+<?php require './template/footer.php'; ?>

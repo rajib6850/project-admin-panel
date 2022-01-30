@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2022 at 10:08 AM
+-- Generation Time: Jan 30, 2022 at 02:33 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -39,9 +39,9 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`page_id`, `pg_title`, `pg_content`, `pg_url`) VALUES
-(1, 'Services', 'service content', 'service_content316'),
-(2, 'Services', 'service content', 'service_content686'),
-(3, 'blog', 'blog content', 'blog339');
+(6, 'my services', 'something else', '?pg_url=Another_New_Service1643473187881'),
+(7, 'about us page', 'Lorem ipsum dolor sit amet', '?pg_url=about_us_page1643473352359'),
+(8, 'my Portfolio page', 'this is my portfolio', '?pg_url=Portfolio1643473650454');
 
 -- --------------------------------------------------------
 
@@ -99,7 +99,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `page_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `page_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user`
