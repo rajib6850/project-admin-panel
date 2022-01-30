@@ -15,9 +15,9 @@
 
 
 	<!-- Tinymce  -->
-<!-- 	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> 
+  <script src="https://cdn.tiny.cloud/1/hekvgwl1bhc9d1g5wboj0nn3517878iwa32t4yy0uf3kgqfp/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 	<script>tinymce.init({selector:'#pg_content'});</script>
- -->
+
 
 </head>
 <body>
@@ -124,7 +124,7 @@
 					<li><a class="" href="editpage.php">
 						<span class="fa fa-arrow-right">&nbsp;</span> Edit Page
 					</a></li>
-					<li><a class="" href="editpage.php">
+					<li><a class="" href="assignpage.php">
 						<span class="fa fa-arrow-right">&nbsp;</span> Assign Home Page
 					</a></li>
 				</ul>
@@ -162,7 +162,7 @@
 
 
 
-			<li><a href="../login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="logout.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 

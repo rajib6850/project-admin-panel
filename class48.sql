@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2022 at 02:33 AM
+-- Generation Time: Jan 30, 2022 at 10:13 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -39,9 +39,10 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`page_id`, `pg_title`, `pg_content`, `pg_url`) VALUES
-(6, 'my services', 'something else', '?pg_url=Another_New_Service1643473187881'),
-(7, 'about us page', 'Lorem ipsum dolor sit amet', '?pg_url=about_us_page1643473352359'),
-(8, 'my Portfolio page', 'this is my portfolio', '?pg_url=Portfolio1643473650454');
+(6, 'my services', 'something else', '?pg_url=my_services1643530824351'),
+(7, 'about us page', 'Lorem ipsum dolor sit amet', '?pg_url=about_us_page1643532831313'),
+(9, 'Home', 'What is Lorem Ipsum?\r\n&lt;b&gt;Lorem Ipsum is simply&lt;/b&gt; dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'index.php'),
+(10, 'MY Blog', '&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet,&lt;/strong&gt;&lt;em&gt; consectetur adipiscing elit, &lt;/em&gt;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;\r\n&lt;p style=&quot;text-align: center;&quot;&gt;&amp;nbsp;&lt;/p&gt;\r\n&lt;h1 style=&quot;text-align: center;&quot;&gt;Taltali computer&lt;/h1&gt;', '?pg_url=MY_Blog1643533655250');
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,8 @@ INSERT INTO `user` (`id`, `fname`, `lname`, `email`, `password`, `username`) VAL
 (10, 'rasel', 'ahamed', 'rasel@gmail.com', '23423432', 'rasel943'),
 (11, 'Kuddus', 'asfasf', 'something@gmail.com', '126541444949', '03'),
 (12, 'Md.', 'Bashar', 'bashar@gmail.com', 'Bashaar343@4532', 'bb333'),
-(13, 'Md.', 'Rajib', 'rajib6850@gmail.com', 'rajib7g', 'rajib7g');
+(13, 'Md.', 'Rajib', 'rajib6850@gmail.com', 'rajib7g', 'rajib7g'),
+(14, 'pritom', 'chandra', 'pritom@gmail.com', 'pritom@pritom', 'pritom');
 
 --
 -- Indexes for dumped tables
@@ -99,13 +101,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `page_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `page_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

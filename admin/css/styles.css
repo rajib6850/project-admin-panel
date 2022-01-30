@@ -1036,10 +1036,11 @@ p.back-link {
 .footer{
   border-top: 1px solid #ccc;
   padding-top: 20px;  
-  position: absolute;
-  bottom: 0;
-  left: 0;
   background-color: #E9ECF2;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 .mian{

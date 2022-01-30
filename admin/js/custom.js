@@ -1,6 +1,3 @@
-$('#calendar').datepicker({
-		});
-
 !function ($) {
     $(document).on("click","ul.nav li.parent > a ", function(){          
         $(this).find('em').toggleClass("fa-minus");      
@@ -28,3 +25,6 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 		$this.find('em').removeClass('fa-toggle-down').addClass('fa-toggle-up');
 	}
 })
+
+
+

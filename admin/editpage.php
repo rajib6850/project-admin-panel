@@ -1,5 +1,10 @@
 	<?php 
 
+		if(!isset($_GET['pg_url'])){
+			header('location: allpage.php');
+		}
+		
+
 		require './template/header.php';
 
 
@@ -11,7 +16,7 @@
 		if(isset($_POST['update_page'])){
 
 			$pg_title = $_POST['pg_title'];
-			$pg_content = $_POST['pg_content'];
+			$pg_content = htmlspecialchars($_POST['pg_content']);
 
 			if(empty($pg_title)){
 				$pg_title_error = "Title filde must not be empty..!";

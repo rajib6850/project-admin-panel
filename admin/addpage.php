@@ -7,7 +7,7 @@
 		if(isset($_POST['add_page'])){
 
 			$pg_title = $_POST['pg_title'];
-			$pg_content = $_POST['pg_content'];
+			$pg_content = htmlspecialchars($_POST['pg_content']);
 
 			if(empty($pg_title)){
 				$pg_title_error = "Title fild must not be empty..!";
@@ -19,6 +19,7 @@
 
 				if($pg_sql_result){
 					$pg_add_success = "Page successfully added..!";
+					
 				}
 			}
 		}

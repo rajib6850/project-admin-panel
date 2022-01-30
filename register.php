@@ -93,40 +93,6 @@
 
 	</div>
 
-	<div class="all-data">
-		<table class="table">
-			<thead>
-				<tr>
-					<th>Sl.</th>
-					<th>Username: </th>
-					<th>Full Name: </th>
-					<th>E-mail: </th>
-					<th>Password: </th>
-				</tr>
-			</thead>
-			<tbody>
-
-	<?php 
-	$sql = "SELECT * FROM user ORDER BY id DESC";
-
-	$data = $conn->query($sql);
-	$x = 1;
-	while ($alldata = $data->fetch_object()) :?>
-
-	<tr>
-		<td><?php echo $x ; $x++; ?></td>
-		<td><?php echo $alldata->username;?></td>
-		<td><?php echo $alldata->fname." ". $alldata->lname; ?></td>
-		<td><?= $alldata->email; ?></td>
-		<td><?= $alldata->password; ?></td>
-	</tr>
-	<?php endwhile;?>
-
-
-			</tbody>
-		</table>
-	</div>
-
 
 </body>
 </html>

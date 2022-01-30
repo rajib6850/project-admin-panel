@@ -14,7 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Register Form</title>
+	<title>Login Form</title>
 
 	<!-- Bootstrat CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -58,11 +58,12 @@
 
 				if($result == 0){
 					$error['loginfil'] = "User or email and password is wrong..!";
+					$error['demo_pass'] = "Demo Username: rajib7g <br> Demo E-mail: rajib6850@gmail.com <br> Demo Password: rajib7g";
 				}else{
 
 					$_SESSION['success'] = "login successfully";
 
-					header('location: admin.php');
+					header('location: ./admin/index.php');
 				}
 			}
 		}
@@ -75,6 +76,7 @@
 			
 			<h4 class="text-center text-uppercase fw-bolder">Login Form</h4>
 			<?php 	if(isset($error['loginfil'])){echo "<div class='alert alert-danger' role='alert'> " . $error['loginfil']. "</div>";}?>
+			<?php 	if(isset($error['demo_pass'])){echo "<div class='alert alert-info' role='alert'> " . $error['demo_pass']. "</div>";}?>
 
 		<form action="#" method="POST">
 			<div class="group mb-3">
@@ -82,6 +84,9 @@
 				<input type="text" name="login_info" id="useroremail" class="form-control">
 
 				<?php if(isset($error['useroremail'])){echo "<span class='form-text text-danger'>" . $error['useroremail'] . "</span>";} ?>
+
+
+
 			</div>
 			<div class="group mb-3">
 				<label class="form-label" for="password">Password</label>
